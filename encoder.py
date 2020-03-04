@@ -1,22 +1,4 @@
-def gen_table():
-    table = {}
-    count = 0
-    for i in range(26):
-        table[count] = chr(i + 65)
-        count += 1
-    for i in range(26):
-        table[count] = chr(i + 97)
-        count += 1
-    for i in range(10):
-        table[count] = str(i)
-        count += 1
-    table[count] = "+"
-    table[count+1] = "/"
-    return table
-
-
-TABLE = gen_table()
-# print(TABLE)
+from utils import TABLE
 
 
 def hex2binary(h):
